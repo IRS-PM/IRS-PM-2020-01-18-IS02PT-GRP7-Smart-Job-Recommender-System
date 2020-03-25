@@ -9,7 +9,7 @@ public class ValidationErrorDO implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Error and Cause")
+	@org.kie.api.definition.type.Label("Error description")
 	private java.lang.String error;
 
 	public ValidationErrorDO() {
