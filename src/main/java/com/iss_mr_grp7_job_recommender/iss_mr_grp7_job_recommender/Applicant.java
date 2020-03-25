@@ -6,12 +6,70 @@ package com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender;
 
 public class Applicant implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Applicant() {
-    }
+	@org.kie.api.definition.type.Label(value = "Highest Education Attained")
+	private java.lang.String highest_education;
+	@org.kie.api.definition.type.Label(value = "Field of Study")
+	private java.lang.String field;
+	@org.kie.api.definition.type.Label(value = "Total Work Experience")
+	private java.lang.Integer work_exp;
+	@org.kie.api.definition.type.Label(value = "Preferred Job Scope")
+	private java.lang.String pref_job;
+	@org.kie.api.definition.type.Label(value = "Zip Code")
+	private java.lang.Integer zip_code;
 
+	public Applicant() {
+	}
 
+	public java.lang.String getHighest_education() {
+		return this.highest_education;
+	}
 
+	public void setHighest_education(java.lang.String highest_education) {
+		this.highest_education = highest_education;
+	}
+
+	public java.lang.String getField() {
+		return this.field;
+	}
+
+	public void setField(java.lang.String field) {
+		this.field = field;
+	}
+
+	public java.lang.Integer getWork_exp() {
+		return this.work_exp;
+	}
+
+	public void setWork_exp(java.lang.Integer work_exp) {
+		this.work_exp = work_exp;
+	}
+
+	public java.lang.String getPref_job() {
+		return this.pref_job;
+	}
+
+	public void setPref_job(java.lang.String pref_job) {
+		this.pref_job = pref_job;
+	}
+
+	public java.lang.Integer getZip_code() {
+		return this.zip_code;
+	}
+
+	public void setZip_code(java.lang.Integer zip_code) {
+		this.zip_code = zip_code;
+	}
+
+	public Applicant(java.lang.String highest_education,
+			java.lang.String field, java.lang.Integer work_exp,
+			java.lang.String pref_job, java.lang.Integer zip_code) {
+		this.highest_education = highest_education;
+		this.field = field;
+		this.work_exp = work_exp;
+		this.pref_job = pref_job;
+		this.zip_code = zip_code;
+	}
 
 }
