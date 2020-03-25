@@ -8,8 +8,11 @@ public class Application implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Applicant Info")
+	@org.kie.api.definition.type.Label("Applicant Info")
 	private com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.Applicant applicant;
+
+	@org.kie.api.definition.type.Label(value = "Error and Cause")
+	private com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.ValidationErrorDO error;
 
 	public Application() {
 	}
@@ -23,9 +26,20 @@ public class Application implements java.io.Serializable {
 		this.applicant = applicant;
 	}
 
+	public com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.ValidationErrorDO getError() {
+		return this.error;
+	}
+
+	public void setError(
+			com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.ValidationErrorDO error) {
+		this.error = error;
+	}
+
 	public Application(
-			com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.Applicant applicant) {
+			com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.Applicant applicant,
+			com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.ValidationErrorDO error) {
 		this.applicant = applicant;
+		this.error = error;
 	}
 
 }
