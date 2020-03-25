@@ -4,6 +4,8 @@ import java.lang.Number;
 
 rule "validateApplicantInfo"
 	dialect "mvel"
+	ruleflow-group "validateApplicantInfoRuleFlowGroup"
 	when
+		Applicant( zip_code < 10000 )
 	then
 end
