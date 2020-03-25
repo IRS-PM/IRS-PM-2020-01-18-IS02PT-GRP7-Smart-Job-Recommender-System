@@ -6,7 +6,7 @@ rule "loadJobPostingData"
 	dialect "mvel"
 	ruleflow-group "loadJobPostingDataRuleFlowGroup"
 	when
-		appRecord : Applicant( )
+		$appRecord : Applicant( )
 	then
 		System.out.println("Executed Rule: " + drools.getRule().getName() );
 end
