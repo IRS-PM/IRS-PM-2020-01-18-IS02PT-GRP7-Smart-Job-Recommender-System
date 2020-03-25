@@ -6,7 +6,7 @@
   <artifactId>ISS_MR_Grp7_Job_Recommender</artifactId>
   <version>1.0.0</version>
   <packaging>kjar</packaging>
-  <name>ISS_MR_Grp7_Job_Recommender</name>
+  <name>Smart_Job_Recommender</name>
   <description></description>
   <dependencies>
     <dependency>
