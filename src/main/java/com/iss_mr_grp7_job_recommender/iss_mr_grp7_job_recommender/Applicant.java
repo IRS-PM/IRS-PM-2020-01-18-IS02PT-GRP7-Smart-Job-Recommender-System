@@ -8,16 +8,19 @@ public class Applicant implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Highest Education Attained")
+	@org.kie.api.definition.type.Label("Highest Education Attained")
 	private java.lang.String highest_education;
-	@org.kie.api.definition.type.Label(value = "Field of Study")
+	@org.kie.api.definition.type.Label("Field of Study")
 	private java.lang.String field;
-	@org.kie.api.definition.type.Label(value = "Total Work Experience")
+	@org.kie.api.definition.type.Label("Total Work Experience")
 	private java.lang.Integer work_exp;
-	@org.kie.api.definition.type.Label(value = "Preferred Job Scope")
+	@org.kie.api.definition.type.Label("Preferred Job Scope")
 	private java.lang.String pref_job;
-	@org.kie.api.definition.type.Label(value = "Zip Code")
+	@org.kie.api.definition.type.Label("Zip Code")
 	private java.lang.Integer zip_code;
+
+	@org.kie.api.definition.type.Label(value = "Error and Cause")
+	private java.lang.String error;
 
 	public Applicant() {
 	}
@@ -62,14 +65,24 @@ public class Applicant implements java.io.Serializable {
 		this.zip_code = zip_code;
 	}
 
+	public java.lang.String getError() {
+		return this.error;
+	}
+
+	public void setError(java.lang.String error) {
+		this.error = error;
+	}
+
 	public Applicant(java.lang.String highest_education,
 			java.lang.String field, java.lang.Integer work_exp,
-			java.lang.String pref_job, java.lang.Integer zip_code) {
+			java.lang.String pref_job, java.lang.Integer zip_code,
+			java.lang.String error) {
 		this.highest_education = highest_education;
 		this.field = field;
 		this.work_exp = work_exp;
 		this.pref_job = pref_job;
 		this.zip_code = zip_code;
+		this.error = error;
 	}
 
 }
