@@ -6,7 +6,7 @@ rule "retractValidationForApplicant"
 	dialect "mvel"
 	ruleflow-group "retractValidationForApplicantRuleFlowGroup"
 	when
-		vo : ValidationErrorDO( )
+		vo : ValidationErrorDO( error != null )
 	then
 		retract( vo );
 end
