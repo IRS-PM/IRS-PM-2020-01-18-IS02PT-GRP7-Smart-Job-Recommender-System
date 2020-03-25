@@ -19,9 +19,6 @@ public class Applicant implements java.io.Serializable {
 	private java.lang.Integer zip_code;
 	@org.kie.api.definition.type.Label("Preferred Job Scope")
 	private java.lang.String pref_scope;
-	@org.kie.api.definition.type.Label("Error and Cause")
-	private com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.ValidationErrorDO error;
-
 	public Applicant() {
 	}
 
@@ -65,28 +62,14 @@ public class Applicant implements java.io.Serializable {
 		this.pref_scope = pref_scope;
 	}
 
-	public com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.ValidationErrorDO getError() {
-		return this.error;
-	}
-
-	public void setError(
-			com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.ValidationErrorDO error) {
-		this.error = error;
-	}
-
-	public Applicant(
-			java.lang.String highest_education,
-			java.lang.String field,
-			java.lang.Integer work_exp,
-			java.lang.Integer zip_code,
-			java.lang.String pref_scope,
-			com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.ValidationErrorDO error) {
+	public Applicant(java.lang.String highest_education,
+			java.lang.String field, java.lang.Integer work_exp,
+			java.lang.Integer zip_code, java.lang.String pref_scope) {
 		this.highest_education = highest_education;
 		this.field = field;
 		this.work_exp = work_exp;
 		this.zip_code = zip_code;
 		this.pref_scope = pref_scope;
-		this.error = error;
 	}
 
 }
