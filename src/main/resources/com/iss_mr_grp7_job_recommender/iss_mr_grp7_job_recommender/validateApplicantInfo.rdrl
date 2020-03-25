@@ -1,9 +1,0 @@
-package com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender;
-
-import java.lang.Number;
-
-rule "validateApplicantInfo"
-	dialect "mvel"
-	when
-	then
-end
