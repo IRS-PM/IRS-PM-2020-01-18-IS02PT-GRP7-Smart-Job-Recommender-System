@@ -4,6 +4,9 @@ import java.lang.Number;
 
 rule "retractValidationForApplicant"
 	dialect "mvel"
+	ruleflow-group "retractValidationForApplicantRuleFlowGroup"
 	when
+		vo : ValidationErrorDO( )
 	then
+		retract( vo );
 end
