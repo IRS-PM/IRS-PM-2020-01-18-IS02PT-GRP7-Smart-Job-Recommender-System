@@ -12,5 +12,4 @@ rule "validateApplicantInfo"
 		fact0.setError( "Zip code should be six characters" );
 		insert( fact0 );
 		System.out.println("Executed Rule: " + drools.getRule().getName() );
-		app.setError( Choose... );
 end
