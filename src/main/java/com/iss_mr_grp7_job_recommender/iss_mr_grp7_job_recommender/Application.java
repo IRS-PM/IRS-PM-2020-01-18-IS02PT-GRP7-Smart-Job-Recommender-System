@@ -6,12 +6,26 @@ package com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender;
 
 public class Application implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Application() {
-    }
+	@org.kie.api.definition.type.Label(value = "Applicant Info")
+	private com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.Applicant applicant;
 
+	public Application() {
+	}
 
+	public com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.Applicant getApplicant() {
+		return this.applicant;
+	}
 
+	public void setApplicant(
+			com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.Applicant applicant) {
+		this.applicant = applicant;
+	}
+
+	public Application(
+			com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender.Applicant applicant) {
+		this.applicant = applicant;
+	}
 
 }
