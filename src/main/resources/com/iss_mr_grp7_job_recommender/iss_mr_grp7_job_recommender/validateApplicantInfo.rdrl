@@ -6,7 +6,7 @@ rule "validateApplicantInfo"
 	dialect "mvel"
 	ruleflow-group "validateApplicantInfoRuleFlowGroup"
 	when
-		app : Applicant( zipCode <= 10000 )
+		app : Applicant( zipCode : zipCode <= 10000 )
 	then
 		ValidationErrorDO fact0 = new ValidationErrorDO();
 		fact0.setError( "Zip code should be six characters" );
