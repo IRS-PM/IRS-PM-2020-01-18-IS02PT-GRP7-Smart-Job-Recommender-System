@@ -4,6 +4,7 @@ import java.lang.Number;
 
 rule "loadJobPostingData"
 	dialect "mvel"
+	ruleflow-group "loadJobPostingDataRuleFlowGroup"
 	when
 	then
 end
