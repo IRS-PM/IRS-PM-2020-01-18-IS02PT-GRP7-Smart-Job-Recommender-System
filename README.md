@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿### [ Practice Module ] Project Submission Template: Github Repository & Zip File
 
 **[ Naming Convention ]** CourseCode-StartDate-BatchCode-TeamName-ProjectName.zip
@@ -130,3 +131,6 @@ More reference video presentations [here](https://telescopeuser.wordpress.com/20
 [![alt text](https://www.iss.nus.edu.sg/images/default-source/About-Us/7.6.1-teaching-staff/sam-website.tmb-.png "Let's check Sam' profile page")](https://www.iss.nus.edu.sg/about-us/staff/detail/201/GU%20Zhan)
 
 **zhan.gu@nus.edu.sg**
+=======
+# ISS_MR_GRP7_JobRecommender
+>>>>>>> e05e7a37e5aa07ae22a9eb09c8aa58dafbc6716a
