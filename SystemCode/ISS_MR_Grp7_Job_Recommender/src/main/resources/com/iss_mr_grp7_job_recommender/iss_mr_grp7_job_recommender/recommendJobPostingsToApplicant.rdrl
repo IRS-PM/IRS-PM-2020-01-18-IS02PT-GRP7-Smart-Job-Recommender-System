@@ -1,0 +1,13 @@
+package com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender;
+
+import java.lang.Number;
+
+rule "recommendJobPostingsToApplicant"
+	dialect "mvel"
+	ruleflow-group "recommendJobPostingsToApplicantRuleFlowGroup"
+	when
+		$jobCollection : JobListCollection( )
+	then
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+		$jobCollection.populateJobPostings(  );
+end
