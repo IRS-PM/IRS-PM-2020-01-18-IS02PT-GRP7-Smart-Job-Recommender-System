@@ -6,8 +6,10 @@ rule "recommendJobPostingsToApplicant"
 	dialect "mvel"
 	ruleflow-group "recommendJobPostingsToApplicantRuleFlowGroup"
 	when
-		$jobCollection : JobListCollection( )
+		$jobPostingObj : JobPosting( )
+		$topJobChoiceCollection : JobListCollection( )
 	then
 		System.out.println("Executed Rule: " + drools.getRule().getName() );
-		$jobCollection.populateJobPostings(  );
+		$topJobChoiceCollection.addJobPosting( $jobPostingObj );
+		retract( $jobPostingObj );
 end

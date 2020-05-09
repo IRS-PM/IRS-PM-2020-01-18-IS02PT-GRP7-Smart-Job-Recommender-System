@@ -1,0 +1,15 @@
+package com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender;
+
+import java.lang.Number;
+
+rule "offlineModeTravelDuration"
+	dialect "mvel"
+	ruleflow-group "offlineModeTravelDurationRuleFlowGroup"
+	when
+		$appOffline : Applicant( )
+		vo : ValidationErrorDO( )
+	then
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+		$appOffline.populateJobTravelDuration( true );
+		retract( vo );
+end

@@ -1,0 +1,18 @@
+package com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender;
+
+import java.lang.Number;
+
+rule "validateInternetConnection"
+	dialect "mvel"
+	ruleflow-group "validateInternetConnectionRuleFlowGroup"
+	when
+		appWifi : Applicant( )
+		$wifiObj : internetCheck( internetStatus : internetStatus == false )
+	then
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+		ValidationErrorDO fact0 = new ValidationErrorDO();
+		fact0.setError( "No internet connection detected. System will run in offline mode. Please select a new ZIP code from the drop down selection box." );
+		insert( fact0 );
+		appWifi.setError( fact0 );
+		retract( $wifiObj );
+end

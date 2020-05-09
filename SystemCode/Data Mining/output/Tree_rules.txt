@@ -1,0 +1,53 @@
+|--- Year_Experience <= 3.50
+|   |--- java scala <= 0.50
+|   |   |--- phd <= 0.50
+|   |   |   |--- Year_Experience <= 1.50
+|   |   |   |   |--- Executive <= 0.50
+|   |   |   |   |   |--- class: Low
+|   |   |   |   |--- Executive >  0.50
+|   |   |   |   |   |--- class: Med
+|   |   |   |--- Year_Experience >  1.50
+|   |   |   |   |--- architecture <= 0.50
+|   |   |   |   |   |--- class: High
+|   |   |   |   |--- architecture >  0.50
+|   |   |   |   |   |--- class: Med
+|   |   |--- phd >  0.50
+|   |   |   |--- engineering <= 0.50
+|   |   |   |   |--- statistical <= 0.50
+|   |   |   |   |   |--- class: Med
+|   |   |   |   |--- statistical >  0.50
+|   |   |   |   |   |--- class: High
+|   |   |   |--- engineering >  0.50
+|   |   |   |   |--- Year_Experience <= 1.50
+|   |   |   |   |   |--- class: High
+|   |   |   |   |--- Year_Experience >  1.50
+|   |   |   |   |   |--- class: High
+|   |--- java scala >  0.50
+|   |   |--- class: High
+|--- Year_Experience >  3.50
+|   |--- master <= 0.50
+|   |   |--- perl <= 0.50
+|   |   |   |--- implementations <= 1.50
+|   |   |   |   |--- automation <= 0.50
+|   |   |   |   |   |--- class: High
+|   |   |   |   |--- automation >  0.50
+|   |   |   |   |   |--- class: High
+|   |   |   |--- implementations >  1.50
+|   |   |   |   |--- class: Low
+|   |   |--- perl >  0.50
+|   |   |   |--- python <= 0.50
+|   |   |   |   |--- class: High
+|   |   |   |--- python >  0.50
+|   |   |   |   |--- class: Med
+|   |--- master >  0.50
+|   |   |--- design <= 0.50
+|   |   |   |--- optimization <= 0.50
+|   |   |   |   |--- class: High
+|   |   |   |--- optimization >  0.50
+|   |   |   |   |--- class: Low
+|   |   |--- design >  0.50
+|   |   |   |--- Year_Experience <= 7.50
+|   |   |   |   |--- class: Med
+|   |   |   |--- Year_Experience >  7.50
+|   |   |   |   |--- class: High
+

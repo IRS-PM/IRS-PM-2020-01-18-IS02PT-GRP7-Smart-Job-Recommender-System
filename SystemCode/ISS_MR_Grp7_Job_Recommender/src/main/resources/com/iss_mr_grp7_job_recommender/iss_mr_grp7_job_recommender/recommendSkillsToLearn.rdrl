@@ -1,0 +1,13 @@
+package com.iss_mr_grp7_job_recommender.iss_mr_grp7_job_recommender;
+
+import java.lang.Number;
+
+rule "recommendSkillsToLearn"
+	dialect "mvel"
+	ruleflow-group "recommendSkillsToLearnRuleFlowGroup"
+	when
+		$appSkills : Applicant( )
+	then
+		System.out.println("Executed Rule: " + drools.getRule().getName() );
+		$appSkills.populateRecommendedSkillsToLearn(  );
+end

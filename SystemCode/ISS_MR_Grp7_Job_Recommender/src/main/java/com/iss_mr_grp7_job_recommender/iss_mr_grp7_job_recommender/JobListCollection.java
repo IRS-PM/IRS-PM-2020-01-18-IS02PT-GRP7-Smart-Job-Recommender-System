@@ -45,57 +45,36 @@ public class JobListCollection implements java.io.Serializable {
 	    this.jobList.add(job);
 	}
 	
-	//Populate the job list from csv
-	public void populateJobPostings(){
-        //Load Jobs from CSV
-        //CSV file to be placed in /home/iss-user directory
-        
-      	    
-		Path pathToFile = Paths.get("/home/iss-user/Desktop/JobDatas.csv");
-	    try(BufferedReader br = Files.newBufferedReader(pathToFile, StandardCharsets.US_ASCII)) 
- 
-        { 
- 	 		 System.out.println("Reading line from CSV file...");
-     		 String line = br.readLine(); 
- 	         line = br.readLine(); 
-     		 int j=0;
-     	 	 while (line != null) { 
-
-		        System.out.println("In loop...");
-     	 	    String[] attributes = line.split(",");
-     	 	    j++;
-     	 	
-      		    JobPosting job= createJob(attributes); 
-      			getJobList().add(job) ;
-       	        line = br.readLine(); 
-   		        System.out.println("End of loop...");
-      	        }
-        } 
-  	   catch (IOException ioe) { 
-  	   			ioe.printStackTrace(); 
-  	   	} 
+	
+	public void populateJobPostings(String[] attributes){
+ 	 	
+  	    JobPosting job= createJob(attributes); 
+  		getJobList().add(job);
         
 	}
 
     private static JobPosting createJob(String[] metadata) 	{
 		//Make sure the variables correspond to the correct metadata columns!!
 		
-		System.out.println("Parsing attributes from metadata...");
-		
 		//Assigning info from csv to placeholder variables
-		String employmentType = metadata[0];
-		String jobTitle = metadata[1];
-		String companyName = metadata[2];
-		int workExperienceReq = Integer.parseInt(metadata[3]); 
-		String seniorityLevel = metadata[4];
-		String jobCategory = metadata[5]; 
-		String jobRequirements = metadata[6];
-		int minSalary = Integer.parseInt(metadata[7]); 
-		int maxSalary = Integer.parseInt(metadata[8]); 
+		String jobID = metadata[0];
+		String employmentType = metadata[1];
+		String jobTitle = metadata[2];
+		String companyName = metadata[3];
+		int workExperienceReq = Integer.parseInt(metadata[5]); 
+		String seniorityLevel = metadata[6];
+		String jobCategory = metadata[7]; 
+		String jobRequirements = metadata[8];
+		int minSalary = (int) Double.parseDouble(metadata[9]);
+		int maxSalary = (int) Double.parseDouble(metadata[10]); 
+	    String salaryRange = metadata[12];
+	    String jobQualifications = metadata[13];
+	    String jobTechnicalSkills = metadata[14];
+
 		 
- 		System.out.println("Assigning attributes to job object...");
 		//Build JobPosting object and assign variables to attributes
 		JobPosting job = new JobPosting();
+		job.setJobID(jobID);
 		job.setEmploymentType(employmentType);
 		job.setJobTitle(jobTitle);
 		job.setCompanyName(companyName);
@@ -105,8 +84,10 @@ public class JobListCollection implements java.io.Serializable {
 		job.setJobRequirements(jobRequirements);
 		job.setMinSalary(minSalary);
 		job.setMaxSalary(maxSalary);
+		job.setSalaryRange(salaryRange);
+		job.setJobQualifications(jobQualifications);
+		job.setJobTechnicalSkills(jobTechnicalSkills);
 		
-				
 		return job;
 			 
 	}
