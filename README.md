@@ -23,7 +23,7 @@ This process is very tedious and inefficient due to the amount of workload requi
 | :------------ |:---------------:| :-----| :-----|
 | Leonard Loh Kin Yung | A0213553M | Development of business rules and score-based heuristic evaluation, system development in KIE Workbench, integration of CSV database and Google API integration with KIE workbench, user form modelling, documentation| e0508654@u.nus.edu |
 | Daniel Tan Hoong Xiang | A0074608B | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567B@gmail.com |
-| Aaron Kueh Hee Kheng | A1234567C | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567C@outlook.com |
+| Aaron Kueh Hee Kheng | A0213552N | Development of algorithm for web-crawling on job website, data cleaning, data mining, feature engineering and machine learning modeling, data mining architecture design, documentation| e0508653@u.nus.edu |
 
 
 ---
