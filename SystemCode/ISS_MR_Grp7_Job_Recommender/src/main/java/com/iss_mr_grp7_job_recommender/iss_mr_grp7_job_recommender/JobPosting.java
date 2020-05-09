@@ -219,7 +219,7 @@ public class JobPosting implements java.io.Serializable {
 
 	public void calculateTravelDurationOffline(int postalCode, String travelMode) {
 		JSONParser parser = new JSONParser();
-		String path = "/home/iss-user/Desktop/Miscellaneous/%d.json";
+		String path = "/home/iss-user/Desktop/group7/Database/%d.json";
 		path = path.format(path, postalCode);
 		int duration = 0;
 

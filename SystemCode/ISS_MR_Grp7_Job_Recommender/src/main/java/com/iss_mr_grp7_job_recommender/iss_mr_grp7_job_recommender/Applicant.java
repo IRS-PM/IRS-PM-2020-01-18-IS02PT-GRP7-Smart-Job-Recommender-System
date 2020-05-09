@@ -166,7 +166,7 @@ public class Applicant implements java.io.Serializable {
 		// Load Jobs from CSV
 		// CSV file to be placed in /home/iss-user/Desktop/Miscellaneous folder directory
 
-		Path pathToFile = Paths.get("/home/iss-user/Desktop/Miscellaneous/JobDatas.csv");
+		Path pathToFile = Paths.get("/home/iss-user/Desktop/group7/Database/JobDatas.csv");
 		try (BufferedReader br = Files.newBufferedReader(pathToFile,
 				StandardCharsets.US_ASCII))
 

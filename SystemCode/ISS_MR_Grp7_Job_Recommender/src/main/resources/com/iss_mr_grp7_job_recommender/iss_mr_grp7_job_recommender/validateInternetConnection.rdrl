@@ -13,6 +13,7 @@ rule "validateInternetConnection"
 		ValidationErrorDO fact0 = new ValidationErrorDO();
 		fact0.setError( "No internet connection detected. System will run in offline mode. Please select a new ZIP code from the drop down selection box." );
 		insert( fact0 );
-		appWifi.setError( fact0 );
 		retract( $wifiObj );
+		appWifi.setError( fact0 );
+		appWifi.setZipCode( 140132 );
 end
