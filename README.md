@@ -1,4 +1,3 @@
-[Online editor for this README.md markdown file](https://pandao.github.io/editor.md/en.html "pandao")
 # ISS_MR_GRP7_JobRecommender
 ---
 
