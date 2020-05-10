@@ -29,7 +29,7 @@ This process is very tedious and inefficient due to the amount of workload requi
 ---
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
-`Refer to  Github Folder: Video`
+`<Youtube link to project video>`: https://youtu.be/Ce0ZZE3HxcQ
 
 
 ---
@@ -38,19 +38,19 @@ This process is very tedious and inefficient due to the amount of workload requi
 
 `Refer to <Installation & User Guide>  at Github Folder: UserGuide`
 
-`<Github file link>`:
+`<Github file link>`: https://github.com/danieltanhx/IRS-PM-2020-01-18-IS02PT-GRP7-Smart-Job-Recommender-System/blob/master/UserGuide/Job%20Recommender%20User%20Guide.pdf
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
 
 `Refer to project report at Github Folder: ProjectReport`
 
-`<Github file link>`:
+`<Github file link>`: https://github.com/danieltanhx/IRS-PM-2020-01-18-IS02PT-GRP7-Smart-Job-Recommender-System/blob/master/ProjectReport/Smart%20Job%20Recommender%20System%20Report.pdf
 
 ---
-## SECTION 7 : MISCELLANEOUS
+## SECTION 7 : Database
 
-`Refer to Github Folder: Miscellaneous`
+`Refer to Github Folder: Database`
 
 Contains the job database CSV file for KIE to consume, as well as offline estimated travel time required for selected postal codes. The folder contains the following items:
 - JobDatas.csv
