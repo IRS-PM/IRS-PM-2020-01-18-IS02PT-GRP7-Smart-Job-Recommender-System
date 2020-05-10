@@ -21,7 +21,7 @@ This process is very tedious and inefficient due to the amount of workload requi
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
 | Leonard Loh Kin Yung | A0213553M | Development of business rules and score-based heuristic evaluation, system development in KIE Workbench, integration of CSV database and Google API integration with KIE workbench, user form modelling, documentation| e0508654@u.nus.edu |
-| Daniel Tan Hoong Xiang | A0074608B | Validation of system integration between data mining and KIE workbench, validation of KIE workbench codes, validation of data mining and machine learning codes, business rules development, businesss development in a business level, documentation, video editting and video recording, integration of CSV database, system develipment in KIE| E0507982@u.nus.edu |
+| Daniel Tan Hoong Xiang | A0074608B | Validation of system integration between data mining and KIE workbench, validation of KIE workbench codes, validation of data mining and machine learning codes, business rules development, businesss development in a business level, documentation, video editting and video recording, integration of CSV database, system development in KIE| E0507982@u.nus.edu |
 | Aaron Kueh Hee Kheng | A0213552N | Development of algorithm for web-crawling on job website, data cleaning, data mining, feature engineering and machine learning modeling, data mining architecture design, documentation| e0508653@u.nus.edu |
 
 
