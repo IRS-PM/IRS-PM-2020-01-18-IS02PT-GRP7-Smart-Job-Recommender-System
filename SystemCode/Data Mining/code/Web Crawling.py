@@ -201,10 +201,14 @@ def main():
         
         enter = str(input('Please enter: ')).lower()
       
-        if enter == (('quit') or ('exit')):
+        if enter == ('quit' or 'exit'):
             exit()
             break
             
+        if enter == ('exit'):
+            exit()
+            break
+
         else:
             print('Job keyword entered:', enter)
             jb_links = link_scrap(enter)
